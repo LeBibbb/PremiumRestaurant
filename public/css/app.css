@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11845,6 +11844,30 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.about-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-right: 2rem;
+  transition: transform 0.3s ease;
+}
+.about-image.small {
+  width: 50%;
+  max-height: 300px;
+}
+.about-image.medium {
+  width: 75%;
+  max-height: 450px;
+}
+.about-image.large {
+  width: 100%;
+  max-height: 600px;
+}
+.about-image:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=app.css.map */
