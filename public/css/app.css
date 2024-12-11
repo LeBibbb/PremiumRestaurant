@@ -20208,5 +20208,8 @@ textarea.form-control-lg {
 .nav-link-transparent:hover {
   color: #ffc107 !important;
 }
+.nav-link-transparent .custom-placeholder::placeholder {
+  color: #6c757d;
+}
 
 /*# sourceMappingURL=app.css.map */
