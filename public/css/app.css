@@ -11967,7 +11967,7 @@ textarea.form-control-lg {
 }
 
 .card:hover {
-  background-color: orange;
+  background-color: #cda45d;
   transition: 200ms;
   color: white;
 }
