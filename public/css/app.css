@@ -20069,8 +20069,9 @@ textarea.form-control-lg {
   content: "賈";
 }
 
-.modal {
-  background-color: black;
+.modal-content {
+  width: 1500px;
+  transform: translateX(-22%);
 }
 
 .video-play-button {
@@ -20187,6 +20188,23 @@ textarea.form-control-lg {
 }
 .menu-item:hover .text-warning {
   color: #f8f9fa !important;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.card h2 {
+  color: orange;
+}
+
+.card:hover {
+  background-color: orange;
+  transition: 200ms;
+  color: white;
+}
+.card:hover h2 {
+  color: white;
 }
 
 .nav-pills .nav-link.active {
@@ -20308,12 +20326,13 @@ textarea.form-control-lg {
 }
 
 ::placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #837c6d !important;
   opacity: 1 !important;
+  font-size: 20px;
 }
 
 input::placeholder, textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #837c6d !important;
   opacity: 1 !important;
   font-weight: 300;
   font-size: 0.9rem;
