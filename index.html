@@ -9,18 +9,18 @@
 </head>
 <body>
     <!-- le header  -->
-    <header class="bg-image fs-4" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/hero-bg.jpg'); background-size: cover; background-position: center; height: 100vh;">
+    <header id="header" class="bg-image fs-4" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/hero-bg.jpg'); background-size: cover; background-position: center; height: 100vh;">
         <nav class="container-fluid pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.5); position: fixed; z-index: 2;">
             <div class="d-flex justify-content-between align-items-center text-white">
                 <div class="fs-2">CBIENBON</div>
                 <ul class="d-flex list-unstyled gap-4 mb-0">
-                    <li><a href="#" class="amana nav-link text-white fw-medium">Home</a></li>
-                    <li><a href="#" class="amana nav-link text-white fw-medium">About</a></li>
-                    <li><a href="#" class="amana nav-link text-white fw-medium">Menu</a></li>
-                    <li><a href="#" class="amana nav-link text-white fw-medium">Events</a></li>
-                    <li><a href="#" class="amana nav-link text-white fw-medium">Gallery</a></li>
-                    <li><a href="#" class="amana nav-link text-white fw-medium">Chefs</a></li>
-                    <li><a href="#" class="amana nav-link text-white fw-medium">Contact</a></li>
+                    <li><a href="#header" class="amana nav-link text-white fw-medium">Home</a></li>
+                    <li><a href="#welcome" class="amana nav-link text-white fw-medium">About</a></li>
+                    <li><a href="#menu" class="amana nav-link text-white fw-medium">Menu</a></li>
+                    <li><a href="#events" class="amana nav-link text-white fw-medium">Events</a></li>
+                    <li><a href="#gallery" class="amana nav-link text-white fw-medium">Gallery</a></li>
+                    <li><a href="#chefs" class="amana nav-link text-white fw-medium">Chefs</a></li>
+                    <li><a href="#contact" class="amana nav-link text-white fw-medium">Contact</a></li>
                 </ul>
                 <button class="btn btn-outline-warning px-4 fs-4 rounded-5">BOOK A TABLE</button>
             </div>
@@ -63,7 +63,7 @@
 
 <!-- section welcome -->
 
-    <section class="bg-image fs-4 d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/about-bg.jpg'); background-size: cover; background-position: center; height: 90vh;">
+    <section id="welcome"class="bg-image fs-4 d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/about-bg.jpg'); background-size: cover; background-position: center; height: 90vh;">
         <div class="container-fluid px-5">
         <div class="row justify-content-center">
         <div class="col-10">
@@ -87,7 +87,7 @@
 
 
     <!-- section presentation  -->
-    <section class="bg-image fs-4 d-flex align-items-center" style="background-color: rgb(14, 14, 14); height: 70vh;">
+    <section id="presentation" class="bg-image fs-4 d-flex align-items-center" style="background-color: rgb(14, 14, 14); height: 70vh;">
         <div class="container-fluid mx-5" >
             <div class="text-white mb-5">
                 <p class="text-uppercase mb-1">WHY US</p>
@@ -123,7 +123,7 @@
     </section>
 
     <!-- section menu  -->
-    <section class="bg-black text-white py-5" style="height: 80vh;">
+    <section id="menu" class="bg-black text-white py-5" style="height: 80vh;">
         <div class="container-fluid px-5">
             <div class="text-white mb-5">
                 <p class="text-uppercase mb-1">MENU</p>
@@ -254,7 +254,7 @@
 
 
 
-    <section style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/events-bg.jpg'); background-size: cover; background-position: center; min-height: 80vh;">
+    <section id="events" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/events-bg.jpg'); background-size: cover; background-position: center; min-height: 80vh;">
         <div class="container-fluid ps-5">
             <div class="text-white mb-5">
                 <p class="text-uppercase mb-1">event</p>
@@ -336,7 +336,7 @@
 
     <!-- section reservation -->
 
-    <section class="bg-black text-white py-5">
+    <section id="reservation" class="bg-black text-white py-5">
         <div class="container-fluid ps-5">
             <div class="text-white mb-5">
                 <p class="text-uppercase mb-1">RESERVATION</p>
@@ -382,7 +382,7 @@
 
 
 
-    <section class="bg-black text-white py-5">
+    <section id="gallery" class="bg-black text-white py-5">
         <div class="container-fluid ps-5">
             <div class="text-white mb-5">
             <p class="text-uppercase mb-1">GALLERY</p>
@@ -429,7 +429,7 @@
 
 
         <!-- section des chefs -->
-        <section class="bg-black text-white py-5">
+        <section id="chefs" class="bg-black text-white py-5">
             <div class="container-fluid ps-5">
                 <div class="text-white mb-5">
                     <p class="text-uppercase mb-1">CHEFS</p>
@@ -485,7 +485,7 @@
         <!-- section contact -->
 
 
-        <section class="contact" style="height: 130vh;">   
+        <section id="contact" class="contact" style="height: 130vh;">   
             <div class="container-fluid ps-5">
                 <div class="text-white mb-5">
                     <p class="text-uppercase mb-1">CONOTACT US</p>
