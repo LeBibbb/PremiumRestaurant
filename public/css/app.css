@@ -20143,6 +20143,10 @@ textarea.form-control-lg {
     opacity: 0;
   }
 }
+.amana:hover {
+  color: orange !important;
+}
+
 .about-image {
   width: 100%;
   max-height: 500px;
@@ -20174,7 +20178,7 @@ textarea.form-control-lg {
 }
 .menu-item:hover {
   transform: scale(1.05);
-  background-color: #ffc107;
+  background-color: #cda45d;
   color: #f8f9fa;
 }
 
@@ -20195,6 +20199,9 @@ textarea.form-control-lg {
   color: white;
 }
 
+.nav-pills .nav-link:active {
+  color: #ffc107 !important;
+}
 .nav-pills .nav-link:hover {
   background-color: rgba(255, 193, 7, 0.1) !important;
   color: #ffc107 !important;
