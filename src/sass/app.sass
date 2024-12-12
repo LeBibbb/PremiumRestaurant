@@ -9,30 +9,24 @@
 @use "./modules/_sectionGallery"
 @use "./modules/_sectionChefs"
 
-.nav-link-transparent
-    background-color: transparent !important
-    &.active
-        color: #ffc107 !important
-    &:hover
-        color: #ffc107 !important
-
-
-    .custom-placeholder::placeholder 
-        color: #6c757d
 
 // Placeholder styles
 ::placeholder
-    color:#837c6d !important
+    color:#c6c6c6 !important
     opacity: 1 !important
     font-size: 20px
+    // font-weight: bold!important
 
 input, textarea
+
     &::placeholder
-        color:#837c6d !important
+        color:#c6c6c6 !important
         opacity: 1 !important
         
         font-weight: 300
-        font-size: 0.9rem
+        font-size: 1rem
+        // font-weight: bold!important
 
-
+input
+    height: 50px
         

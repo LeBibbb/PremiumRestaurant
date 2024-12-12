@@ -20177,18 +20177,6 @@ textarea.form-control-lg {
   background-color: #ffc107;
   color: #f8f9fa;
 }
-.menu-item:hover h6 {
-  color: #f8f9fa;
-}
-.menu-item:hover .text-white-50 {
-  color: rgba(248, 249, 250, 0.7);
-}
-.menu-item:hover .border-warning {
-  border-color: #f8f9fa !important;
-}
-.menu-item:hover .text-warning {
-  color: #f8f9fa !important;
-}
 
 .card {
   background-color: rgba(255, 255, 255, 0.05);
@@ -20207,10 +20195,6 @@ textarea.form-control-lg {
   color: white;
 }
 
-.nav-pills .nav-link.active {
-  background-color: rgba(255, 193, 7, 0.2) !important;
-  color: #ffc107 !important;
-}
 .nav-pills .nav-link:hover {
   background-color: rgba(255, 193, 7, 0.1) !important;
   color: #ffc107 !important;
@@ -20218,11 +20202,9 @@ textarea.form-control-lg {
 
 @keyframes fadeSlideIn {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -20312,30 +20294,21 @@ textarea.form-control-lg {
   opacity: 1;
 }
 
-.nav-link-transparent {
-  background-color: transparent !important;
-}
-.nav-link-transparent.active {
-  color: #ffc107 !important;
-}
-.nav-link-transparent:hover {
-  color: #ffc107 !important;
-}
-.nav-link-transparent .custom-placeholder::placeholder {
-  color: #6c757d;
-}
-
 ::placeholder {
-  color: #837c6d !important;
+  color: #c6c6c6 !important;
   opacity: 1 !important;
   font-size: 20px;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #837c6d !important;
+  color: #c6c6c6 !important;
   opacity: 1 !important;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+input {
+  height: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
