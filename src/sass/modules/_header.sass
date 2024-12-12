@@ -1,3 +1,75 @@
 // Header Styles
 .header
     // Add your header styles here
+.modal 
+    background-color: black
+.video-play-button
+  position: absolute
+  z-index: 10
+  top: 100%
+  left: 61%
+  transform: translateX(400%) translateY(-500px)
+  box-sizing: content-box
+  display: block
+  width: 15px
+  height: 12px
+  background: #ffc107
+  border-radius: 50%
+  padding: 9px 24px 18px 28px
+  
+
+  &:hover span
+    transition: 0.5s
+    transform: scale(7)
+    overflow: hidden
+
+  &::before
+    content: ""
+    position: absolute
+    z-index: 0
+    left: 50%
+    top: 50%
+    transform: translateX(-50%) translateY(-50%)
+    display: block
+    width: 75px
+    height: 75px
+    background: #ffc107
+    border-radius: 50%
+    animation: pulse-border 1500ms ease-out infinite
+
+  &::after
+    content: ""
+    position: absolute
+    z-index: 1
+    left: 50%
+    top: 50%
+    transform: translateX(-50%) translateY(-50%)
+    display: block
+    width: 70px
+    height: 70px
+    background: #ffc107
+    border-radius: 50%
+    transition: all 200ms
+    border: solid 4px #fff
+
+  span
+    display: block
+    position: relative
+    z-index: 3
+    width: 0
+    height: 0
+    border-left: 18px solid #fff
+    border-top: 10px solid transparent
+    border-bottom: 12px solid transparent
+
+@keyframes pulse-border
+  0%
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+    opacity: 1
+  100%
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
+    opacity: 0
+
+
+
+   
