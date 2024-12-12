@@ -22,7 +22,9 @@
                     <li><a href="#chefs" class="amana nav-link text-white fw-medium">Chefs</a></li>
                     <li><a href="#contact" class="amana nav-link text-white fw-medium">Contact</a></li>
                 </ul>
-                <button class="btn btn-outline-warning px-4 fs-4 rounded-5">BOOK A TABLE</button>
+                <a href="#reservation">
+                    <button class="btn btn-outline-warning px-4 fs-4 rounded-5">BOOK A TABLE</button>
+                </a>
             </div>
         </nav>
 
@@ -47,10 +49,16 @@
                             <div class="modal-content bg-black">
                                 
                                 <div class="modal-body">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="videoModalLabel">Send me message like location</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
                                 <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/zisxaUawXYM"  allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/H1Y9HC5cmI0?autoplay=1&mute=1&loop=1&playlist=H1Y9HC5cmI0"  allowfullscreen></iframe>
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                <iframe style=" display: flex ; margin: auto; margin-top: 20px; width: 80%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640639.0285271322!2d45.56979935772357!3d42.86110744671667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404e6224341fbc27%3A0xd1d546f260bc6795!2sDaghestan%2C%20Russie!5e0!3m2!1sfr!2sbe!4v1734018436740!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <button type="button" style="display: flex ; margin-top: 15px; margin-left:500px " class="btn btn-secondary " data-bs-dismiss="modal">send location</button>
+                                <button type="button"  style="display: flex ;margin-top: 15px; margin-left:500px" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
 
                                 </div>
                                 
@@ -257,15 +265,15 @@
     <section id="events" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/events-bg.jpg'); background-size: cover; background-position: center; min-height: 80vh;">
         <div class="container-fluid ps-5">
             <div class="text-white mb-5">
-                <p class="text-uppercase mb-1">event</p>
-                <h2 class="display-5 text-warning">Book a Table</h2>
+                <p class="text-uppercase mb-1">Events</p>
+                <h2 class="display-5 text-warning">Organize Your Events in our Restaurant</h2>
             </div>
         </div>
         <div id="eventsCarousel" class="carousel slide container-fluid px-5 py-5" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="0" class="active" ></button>
-                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="0" class="bbb active" ></button>
+                <button class="bbb" type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="1"></button>
+                <button class="bbb" type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -370,7 +378,7 @@
                         <textarea class="form-control bg-black text-white border border-warning rounded-0" rows="5" placeholder="Message"></textarea>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-warning px-5 mt-4 rounded-5">Book a Table</button>
+                        <button type="submit" class="btn btn-warning px-5 mt-4 rounded-5" href="#reservation">Book a Table</button>
                     </div>
                 </div>
             </form>
@@ -541,6 +549,8 @@
                         </div>
                         <div class="col-md-12 d-flex justify-content-center">
                             <button type="submit" class="btn btn-warning w-25 py-3 rounded-5 d-flex justify-content-center">Send Message</button>
+                            
+                           
                         </div>
                         </div>
                     </form>
@@ -553,6 +563,8 @@
         <!-- footer -->
 
         <footer class="bg-black text-light py-4">
+            <a href="#header"><i class="bi bi-arrow-up fs-1 bg-warning text-dark rounded-circle d-flex justify-content-end"></i></a>
+
             <div class="container">
               <div class="row">
                 <div class="col-md-3 mb-4">
@@ -598,6 +610,13 @@
               </div>
             </div>
           </footer>
+
+
+
+          
+
+
+
         
           <div class="copy">
             <div class="container text-center copy">
