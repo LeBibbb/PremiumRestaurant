@@ -11845,13 +11845,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  overflow-x: hidden !important;
+}
 .modal-content {
   width: 1500px;
   transform: translateX(-22%);
 }
 
 .video-play-button {
-  position: absolute;
   z-index: 10;
   top: 100%;
   left: 61%;
@@ -12027,6 +12029,7 @@ textarea.form-control-lg {
   left: 0;
   bottom: 0;
   right: 0;
+  overflow: hidden;
 }
 .gallery-item.square-image:hover {
   transform: scale(1.05);
