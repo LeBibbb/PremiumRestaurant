@@ -9,8 +9,8 @@
 </head>
 <body>
     <!-- le header  -->
-    <header id="header" class="bg-image fs-4" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/hero-bg.jpg'); background-size: cover; background-position: center; height: 100vh;">
-        <!-- <nav class="container-fluid pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.5); position: fixed; z-index: 2;">
+    <header id="header" class="bg-image fs-4 w-100 d-flex" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('./public/img/hero-bg.jpg'); background-size: cover; background-position: center; ">
+        <!-- <nav class="container-fluid pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.5); position: fixed; z-index: 2; width: 100%;">
             <div class="d-lg-flex justify-content-between align-items-center text-white">
                 <div class="fs-2">CBIENBON</div>
                 <ul class=" d-lg-flex list-unstyled gap-4 mb-0">
@@ -27,23 +27,72 @@
                 </a>
             </div>
         </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.5); position: fixed; z-index: 2; width: 100%;">
+            <div class="container-fluid">
+                <!-- Nom/logo aligné à gauche -->
+                <a class="navbar-brand fs-2 me-auto" href="#header">CBIENBON</a>
+        
+                <!-- Bouton Hamburger pour écrans petits -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Contenu de la navbar -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <!-- Liens centrés -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#welcome">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#chefs">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-medium" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Bouton "BOOK A TABLE" aligné à droite -->
+                <a href="#reservation" class="ms-auto">
+                    <button class="btn btn-outline-warning px-4 fs-4 rounded-5">BOOK A TABLE</button>
+                </a>
+            </div>
+        </nav>
+        
+        
 
                 <div class="d-flex align-items-center justify-content-between" style="height: calc(100vh - 80px);">
-                    <div class="" style="padding-left: 5rem;">
-                        <p class="text-white display-4">Welcome to <span class="fw-bold text-warning">CBIENBON</span></p>
-                        <p class="text-white">Delivering great food for more than 18 years!</p>
-                        <div>
-                            <button class="btn btn-outline-warning px-4 fs-4 me-3 rounded-5">OUR MENU</button>
-                            <button class="btn btn-outline-warning px-4 fs-4 rounded-5">BOOK A TABLE</button>
-                        </div>    
-                    </div>
-                    <div >
-                        <div class="container">
-                            <div class="row">
-                                 <a data-bs-toggle="modal" data-bs-target="#videoModal" id="play-video" class="video-play-button" href="#"> <span></span></a>
-                            </div>
+
+
+                        <div class="px-4 px-md-5">
+                            <p class="text-white display-4">Welcome to <span class="fw-bold text-warning">CBIENBON</span></p>
+                            <p class="text-white">Delivering great food for more than 18 years!</p>
+                            <div>
+                                <button class="btn btn-outline-warning px-4 fs-4 me-3 rounded-5">OUR MENU</button>
+                                <button class="btn btn-outline-warning px-4 fs-4 rounded-5">BOOK A TABLE</button>
+                            </div>    
                         </div>
-                         <!-- Modal -->
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <a data-bs-toggle="modal" data-bs-target="#videoModal" id="play-video" class="video-play-button" href="#">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>  
                         <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                             <div class="modal-content bg-black">
@@ -68,6 +117,7 @@
                     </div>
                 </div> 
     </header>
+    
 
 <!-- section welcome -->
 
@@ -104,7 +154,7 @@
             
             <div class="row">
                 <div class="col-md-4 mb-4">
-                <div class="card p-4 h-100 d-flex flex-column" >
+                <div class="card p-4 h-100 d-lg-flex flex-column" >
                 <h2 class="display-4">01</h2>
                 <h3 class="text-white mb-3">Lorem Ipsum</h3>
                 <p class="text-white-50 flex-grow-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet!</p>
@@ -351,7 +401,7 @@
                 <h2 class="display-5 text-warning">Book a Table</h2>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid px-5 ">
            
             <form>
                 <div class="row g-4">
@@ -388,51 +438,66 @@
 
         <!-- section gallery  -->
 
-
-
-    <section id="gallery" class="bg-black text-white py-5">
-        <div class="container-fluid ps-5">
-            <div class="text-white mb-5">
+ <section id="gallery" class="bg-black text-white py-5">
+    <div class="container-fluid ps-5">
+        <div class="text-white mb-5">
             <p class="text-uppercase mb-1">GALLERY</p>
-                <h2 class="display-5 text-warning">Some Photos From Our Restaurant</h2>
-            </div>
+            <h2 class="display-5 text-warning">Some Photos From Our Restaurant</h2>
         </div>
-        <div class="container-fluid px-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-1.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-2.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-3.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-4.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-5.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-6.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-7.jpg'); background-size: cover; background-position: center;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="gallery-item square-image overflow-hidden rounded position-relative" style="position: relative; width: 100%; padding-top: 100%; background-image: url('./public/img/gallery/gallery-8.jpg'); background-size: cover; background-position: center;">
-                    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row g-0">
+            <!-- Première Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-1.jpg" class="img-fluid zoom-image" alt="Gallery 1">
                 </div>
             </div>
+            <!-- Deuxième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-2.jpg" class="img-fluid zoom-image" alt="Gallery 2">
+                </div>
+            </div>
+            <!-- Troisième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-3.jpg" class="img-fluid zoom-image" alt="Gallery 3">
+                </div>
+            </div>
+            <!-- Quatrième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-4.jpg" class="img-fluid zoom-image" alt="Gallery 4">
+                </div>
+            </div>
+            <!-- Cinquième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-5.jpg" class="img-fluid zoom-image" alt="Gallery 5">
+                </div>
+            </div>
+            <!-- Sixième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-6.jpg" class="img-fluid zoom-image" alt="Gallery 6">
+                </div>
+            </div>
+            <!-- Septième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-7.jpg" class="img-fluid zoom-image" alt="Gallery 7">
+                </div>
+            </div>
+            <!-- Huitième Image -->
+            <div class="col-md-3 col-sm-6">
+                <div class="gallery-item rounded overflow-hidden position-relative">
+                    <img src="./public/img/gallery/gallery-8.jpg" class="img-fluid zoom-image" alt="Gallery 8">
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
 
 
@@ -493,7 +558,7 @@
         <!-- section contact -->
 
 
-        <section id="contact" class="contact" >   
+        <section id="contact" class="contact bg-black" >   
             <div class="container-fluid ps-5">
                 <div class="text-white mb-5">
                     <p class="text-uppercase mb-1">CONOTACT US</p>
@@ -618,14 +683,14 @@
 
 
         
-          <div class="copy">
+          <div class="copy bg-black">
             <div class="container text-center copy">
                 <p>© Copyright <strong>CBIENBON.</strong> All Rights Reserved</p>
               </div>
           </div>
-          <div class="fleche fixed-bottom">
+          <div class="fleche fixed-bottom ">
             <a href="#"><i class=" icon-fleche bi bi-arrow-up-circle text-warning "></i></a>
-        </div>
+            </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
