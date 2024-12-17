@@ -10,7 +10,7 @@ body
   z-index: 10
   top: 100%
   left: 61%
-  transform: translateX(400%) translateY(-500px)
+  transform: translateX(50vw) translateY(-50px)
   box-sizing: content-box
   display: block
   width: 15px
@@ -18,7 +18,11 @@ body
   background: #cda45d
   border-radius: 50%
   padding: 9px 24px 18px 28px
+
   
+
+
+
 
   &:hover span
     transition: 0.5s
@@ -87,3 +91,21 @@ body
 
 .icon-fleche
     font-size: 200%
+
+@media (max-width: 1200px)  
+      .video-play-button
+            transform: translateX(30vw) translateY(-50px)
+
+@media (max-width: 770px) 
+  .contenu
+    justify-content: center !important
+    margin-left: 14%
+  .video-play-button 
+    transform: translateX(0) translateY(0) 
+    margin-top: 20px 
+    align-self: center 
+  
+
+  .d-flex.flex-column.flex-md-row 
+    flex-direction: column
+    align-items: center 
