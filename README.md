@@ -1,4 +1,3 @@
-```markdown
 # 🍽️ CBIENBON - Site vitrine de restaurant
 
 Bienvenue sur **CBIENBON**, un site vitrine moderne et responsive pour un restaurant. Ce projet a été réalisé avec **HTML**, **CSS**, et **Bootstrap 5**.
@@ -25,20 +24,17 @@ Créer une landing page élégante et fonctionnelle pour un restaurant fictif. L
 
 ## 📂 Structure simple
 
-```
-
 📁 cbienbon/
 ├── index.html
 ├── public/
-│   ├── css/
-│   └── img/
+│ ├── css/
+│ └── img/
 
-```
+markdown
+Copier
+Modifier
 
 ## ▶️ Lancer le projet
 
-- Ouvre le fichier `index.html` dans ton navigateur
+- Ouvre le fichier `index.html` dans ton navigateur  
 - Ou utilise l'extension **Live Server** si tu es sur VS Code
-
-
-
